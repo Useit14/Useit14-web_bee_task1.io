@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+li{
+    list-style: none;
+}
+.menu-sectoring{
+   padding: 11px 31px 8px 37px !important;
+   height: 64px;
+}
+.menu-right-style{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #505050;
+}
+.menu-left-style{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* black */
+
+    color: #505050;
+}
+.menu-sectoring li{
+    text-align: center;
+
+}
+.submenu-style{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    
+    color: #505050;
+    
+}
+.submenu-sectoring{
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    height: 40px;
+}
+.submenu-sectoring li{
+    padding:12.5px 16px 11.96px 19.33px  ;
+}
+.submenu-sectoring li div img{
+    margin-right: 10.79px !important;
+}
+.content-style{
+    background: #F5F5F5 !important;
+}
+.content-sectoring{
+    padding: 0px  32px 29px  32px;
+}
+.content-right-sectoring{
+    margin-left: 32px;  
+}
+
+#avatar{
+    padding: 32px 51px 41.07px 51px;
+}
+#avatar img{
+    border-radius: 60px;
+}
+.content-block-style{
+    background-color: white;
+}
+.content-left-block-sectoring{
+    padding: 56px 32px 34.5px 32px;
+    margin-top: 32px !important;
+}
+.content-right-sectoring .row{
+ margin-top: 32px;
+}
+.comment{
+    margin-top: 20px;
+}
+.comment-content{
+    border-left: 2px solid #D3D8DE;
+    padding-left: 8px;
+    margin-top: 20px ;
+    margin-bottom: 21px;
+}
+.author{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* second tx */
+
+    color: #8F8F8F;
+
+
+}
+
+.comment-header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 20px;
+    /* blue */
+
+
+
+}
+.comment-header div{
+    margin-right: 5px;
+}
+.comment-footer{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* black */
+
+    color: #505050;
+
+}
+.comment-footer div:first-child{
+    margin-right: 36px;
+}
+
+.dropNavigation-header{
+    padding: 8px 14.59px 15.56px 16px !important;
+    text-align: left ;
+    border: none;
+    font-family: 'Roboto';
+    font-style:normal;
+    font-weight: 600; 
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    background-color: white !important;
+    /* black */
+    color: #505050;
+    border-bottom: 1px solid  #D3D8DE;;
+    
+
+}
+.dropNavigation-header img{
+    margin-left: 50% ; 
+}
+.dropNavigation{
+    padding: 0px 16px 22px 20.17px !important;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* black */
+
+    color: #505050;
+}
+.dropNavigation img{
+    margin-right: 20.17px;
+}
+.dropNavigation li{
+    margin-top: 22px;
+}
+.dropNavigation li:nth-child(4){
+    border-bottom: 1px solid #D3D8DE;
+}
+.dropForm{
+    padding: 0px 16px 16px 16px;
+}
+.dropForm div{
+    margin-top: 8px;
+}
+.btn{
+    font-family: 'Roboto' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    /* identical to box height, or 171% */
+    --bs-btn-font-size: .75rem !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    background: #5095EC !important;
+    border-radius: 4px !important;
+
+
+/* white */
+
+    color: #FFFFFF;
+}
+@media (max-width:330px) {
+    .menu-right-style,.submenu-style {
+      font-size: 11px;
+    }
+    
+}
