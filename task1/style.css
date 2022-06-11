@@ -1,20 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none !important;
     color: black !important;
 }
-li{
+
+li {
     list-style: none;
 }
-.menu-sectoring{
-   padding: 11px 31px 8px 37px !important;
-   height: 64px;
+
+.menu-sectoring {
+    padding: 11px 31px 8px 37px !important;
+    height: 64px;
 }
-.menu-right-style{
+
+.menu-right-style {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -22,7 +25,8 @@ li{
     line-height: 16px;
     color: #505050;
 }
-.menu-left-style{
+
+.menu-left-style {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -35,68 +39,124 @@ li{
 
     color: #505050;
 }
-.menu-sectoring li{
+
+.menu-sectoring li {
     text-align: center;
 
 }
-.submenu-style{
+
+.submenu-style {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
 
-    
+
     color: #505050;
-    
+
 }
-.submenu-sectoring{
+
+.submenu-sectoring {
     padding-left: 32px !important;
     padding-right: 32px !important;
     height: 40px;
 }
-.submenu-sectoring li{
-    padding:12.5px 16px 11.96px 19.33px  ;
-}
-.submenu-sectoring li div img{
-    margin-right: 10.79px !important;
-}
-.content-style{
-    background: #F5F5F5 !important;
-}
-.content-sectoring{
-    padding: 0px  32px 29px  32px;
-}
-.content-right-sectoring{
-    margin-left: 32px;  
+
+.submenu-sectoring li {
+    padding: 12.5px 16px 11.96px 19.33px;
 }
 
-#avatar{
-    padding: 32px 51px 41.07px 51px;
+.submenu-sectoring li div img {
+    margin-right: 10.79px !important;
 }
-#avatar img{
-    border-radius: 60px;
+
+.content-style {
+    background: #F5F5F5 !important;
 }
-.content-block-style{
-    background-color: white;
+
+.content-sectoring {
+    padding: 0px 32px 29px 32px !important;
 }
-.content-left-block-sectoring{
-    padding: 56px 32px 34.5px 32px;
+
+.content-right-block-sectoring {
     margin-top: 32px !important;
 }
-.content-right-sectoring .row{
- margin-top: 32px;
+
+#avatar {
+    padding: 32px 51px 41.07px 51px;
 }
-.comment{
-    margin-top: 20px;
+
+#avatar img {
+    border-radius: 60px;
 }
-.comment-content{
+
+.content-block-style {
+    background-color: white;
+}
+
+.content-left-block-sectoring {
+    padding: 56px 32px 34.5px 32px !important;
+    margin-top: 32px !important;
+}
+
+.collapse-post{
+    margin-top: 32px !important;
+}
+.collapse-post-header {
+    padding: 18px 21.91px 18.5px 32px !important;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    border-bottom: 1px solid #D3D8DE;
+
+    /* black */
+
+    color: #505050;
+
+}
+.collapse-post-content{
+    padding: 20px 32px 34.5px 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+
+    /* black */
+
+    color: #505050;
+
+}
+.collapse-post-content div{
     border-left: 2px solid #D3D8DE;
     padding-left: 8px;
-    margin-top: 20px ;
-    margin-bottom: 21px;
 }
-.author{
+.comment {
+    margin-top: 20px;
+}
+
+.comment-content {
+    border-left: 2px solid #D3D8DE;
+    padding-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* black */
+
+    color: #505050;
+}
+
+.author {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -110,7 +170,7 @@ li{
 
 }
 
-.comment-header{
+.comment-header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -122,10 +182,12 @@ li{
 
 
 }
-.comment-header div{
+
+.comment-header div {
     margin-right: 5px;
 }
-.comment-footer{
+
+.comment-footer {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -139,17 +201,18 @@ li{
     color: #505050;
 
 }
-.comment-footer div:first-child{
+
+.comment-footer div:first-child {
     margin-right: 36px;
 }
 
-.dropNavigation-header{
+.dropNavigation-header {
     padding: 8px 14.59px 15.56px 16px !important;
-    text-align: left ;
+    text-align: left;
     border: none;
     font-family: 'Roboto';
-    font-style:normal;
-    font-weight: 600; 
+    font-style: normal;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -157,15 +220,19 @@ li{
     background-color: white !important;
     /* black */
     color: #505050;
-    border-bottom: 1px solid  #D3D8DE;;
-    
+    border-bottom: 1px solid #D3D8DE;
+
 
 }
-.dropNavigation-header img{
-    margin-left: 50% ; 
+.row{
+    --bs-gutter-x: 0 !important;
 }
-.dropNavigation{
-    padding: 0px 16px 22px 20.17px !important;
+.dropNavigation-header img {
+    margin-left: 50%;
+}
+
+.dropNavigation {
+    padding: 0px 16px 21px 20.17px !important;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -176,22 +243,28 @@ li{
 
     color: #505050;
 }
-.dropNavigation img{
+
+.dropNavigation img {
     margin-right: 20.17px;
 }
-.dropNavigation li{
+
+.dropNavigation li {
     margin-top: 22px;
 }
-.dropNavigation li:nth-child(4){
+
+.dropNavigation li:nth-child(5) {
     border-bottom: 1px solid #D3D8DE;
 }
-.dropForm{
-    padding: 0px 16px 16px 16px;
+
+.dropForm {
+    padding: 0px 16px 16px 16px !important; 
 }
-.dropForm div{
+
+.dropForm div {
     margin-top: 8px;
 }
-.btn{
+
+.btn {
     font-family: 'Roboto' !important;
     font-style: normal !important;
     font-weight: 500 !important;
@@ -207,13 +280,25 @@ li{
     border-radius: 4px !important;
 
 
-/* white */
+    /* white */
 
     color: #FFFFFF;
 }
-@media (max-width:330px) {
-    .menu-right-style,.submenu-style {
-      font-size: 11px;
+
+@media (max-width:768px) {
+
+    #collapseSubmenu{
+        background-color: white;
     }
-    
+
+}
+
+
+@media (max-width:330px) {
+
+    .menu-right-style,
+    .submenu-style {
+        font-size: 11px;
+    }
+
 }
