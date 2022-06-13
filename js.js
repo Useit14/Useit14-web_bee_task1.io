@@ -3,9 +3,19 @@ function dropNavigationClick(event) {
   let array = element.src.split("/");
   let name = array[array.length - 1];
   if (name == "arrowDown.png") {
-    element.src = "/images/arrowUp.png";
+    element.src = "../images/arrowUp.png";
   } else {
-    element.src = "/images/arrowDown.png";
+    element.src = "../images/arrowDown.png";
+  }
+}
+function dropIndexNavigationClick(event) {
+  let element = event.getElementsByTagName("img")[0];
+  let array = element.src.split("/");
+  let name = array[array.length - 1];
+  if (name == "arrowDown.png") {
+    element.src = "images/arrowUp.png";
+  } else {
+    element.src = "images/arrowDown.png";
   }
 }
 function mapLoad() {
