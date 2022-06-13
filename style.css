@@ -11,7 +11,9 @@ a {
 li {
     list-style: none;
 }
-
+body{
+    background: #F5F5F5 !important;
+}
 .menu-sectoring {
     padding: 11px 31px 8px 37px !important;
     height: 64px;
@@ -71,15 +73,12 @@ li {
     margin-right: 10.79px !important;
 }
 
-.content-style {
-    background: #F5F5F5 !important;
-}
 
 .content-sectoring {
-    padding: 0px 32px 29px 32px !important;
+    padding: 32px 32px 29px 32px !important;
 }
 
-.content-right-block-sectoring {
+.content-right-block-sectoring{
     margin-top: 32px !important;
 }
 
@@ -90,14 +89,17 @@ li {
 #avatar img {
     border-radius: 60px;
 }
+.content-block-sectoring{
+    padding: 18px 37.3px 32px 32px;
 
+}
 .content-block-style {
     background-color: white;
 }
 
 .content-left-block-sectoring {
     padding: 56px 32px 34.5px 32px !important;
-    margin-top: 32px !important;
+
 }
 
 .collapse-post{
@@ -284,10 +286,99 @@ li {
 
     color: #FFFFFF;
 }
+.map-preloader{
+    height: 62% ;
+    width: 92% ;
+    position: absolute !important;
+    top: 28% !important;
 
-@media (max-width:768px) {
+    
+}
+.map-preloader-hidden{
+ visibility: hidden !important;
 
-    #collapseSubmenu{
+}
+.map{
+    position: relative !important;
+}
+.map-hidden{
+    display: hidden !important;
+} 
+
+@media(max-width:1496px){
+    
+    .map-preloader{
+        height: 72% ;
+        width: 92% !important;
+        
+    
+        
+    }
+}
+
+@media(max-width:1177px){
+    
+    .map-preloader{
+        height: 72% !important;
+        width: 89% !important;
+        
+    
+        
+    }
+}
+@media(max-width:992px){
+    
+    .map-preloader{
+        height: 75% !important;
+        width: 89% !important;
+        
+    
+        
+    }
+}
+@media(max-width:867px){
+    
+    .map-preloader{
+       
+        width: 85% !important;
+        
+    
+        
+    }
+}
+@media(max-width:636px){
+    
+    .map-preloader{
+        
+        width: 79% !important;
+        
+    
+        
+    }
+}
+@media(max-width:458px){
+    
+    .map-preloader{
+        
+        width: 71% !important;
+        
+    
+        
+    }
+}
+@media(max-width:336px){
+    
+    .map-preloader{
+        
+        width: 61% !important;
+        
+    
+        
+    }
+}
+@media (max-width:992px) {
+
+    #collapseSubmenu,.collapseSubmenu{
         background-color: white;
     }
 

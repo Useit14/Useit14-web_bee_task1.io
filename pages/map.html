@@ -91,11 +91,12 @@
         </svg>
       </button>
       <div
-        class="collapse navbar-collapse justify-content-between "
+        class="collapse navbar-collapse justify-content-between"
         id="collapseSubmenu"
+        style="z-index: 3"
       >
-        <ul class="nav col-lg-4">
-          <li class="nav-item" >
+        <ul class="nav  col-lg-4">
+          <li class="nav-item">
             <div>
               <img
                 src="../images/acivity.png"
@@ -126,7 +127,7 @@
             </div>
           </li>
         </ul>
-        <ul class="navbar-nav col-xl-6 col-lg-7  justify-content-end">
+        <ul class="navbar-nav col-xl-6 col-lg-7 justify-content-end">
           <li class="nav-item">
             <div>
               <img
@@ -149,7 +150,7 @@
           </li>
           <li class="nav-item">
             <div>
-               <img src="../images/tasklist.svg" alt="">
+              <img src="../images/tasklist.svg" alt="" />
               <a class="" href="resume.html">Resume</a>
             </div>
           </li>
@@ -172,7 +173,54 @@
         </ul>
       </div>
     </nav>
-    
+    <div class="content-sectoring">
+      <div class="row content-block-style content-block-sectoring">
+        <div class="row justify-content-between">
+          <div class="col-lg-1 col-md-2 col-sm-2 col-5">
+            <p>Basic map</p>
+          </div>
+          <div class="col-lg-1 col-md-1 col-sm-2 col-4  justify-content-end">
+            <a
+              href=".map-collapse"
+              data-bs-toggle="collapse"
+              onclick="dropNavigationClick(this)"
+            >
+              <img src="/images/arrowUp.png" alt="" />
+            </a>
+            <a href="" onclick="mapLoad()">
+              <img src="/images/refresh.png" alt="" />
+            </a>
+
+            <img src="/images/close.png" alt="" />
+          </div>
+        </div>
+        <div class="map-collapse collapse show">
+          <div
+            class="row align-items-center map-preloader justify-content-center content-block-style content-block-sectoring"
+            style="z-index: 2"
+          >
+            <div class="col-lg-1 col-md-1 col-sm-1 col-1">
+              <img src="/images/preloader.gif" alt="" />
+            </div>
+          </div>
+          <div
+            class="row map content-block-style justify-content-center content-block-sectoring"
+            style="z-index: 1"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d72959.56015355242!2d37.92433905!3d55.14851924999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1655039603927!5m2!1sru!2sru"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              onload="mapLoad()"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="../js.js"></script>
     <script
