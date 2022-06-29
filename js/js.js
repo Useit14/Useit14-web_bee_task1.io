@@ -1,3 +1,4 @@
+
 function dropNavigationClick(event) {
   let element = event.getElementsByTagName("img")[0];
   let array = element.src.split("/");
@@ -19,6 +20,7 @@ function dropIndexNavigationClick(event) {
   }
 }
 function mapLoad() {
+
   let preloader = document.getElementsByClassName("map-preloader")[0];
   // let map=document.getElementsByClassName("map")[0]
   preloader.classList.add("map-preloader-hidden");
@@ -37,7 +39,8 @@ function upTimer() {
   let hour = document.getElementById("hour");
   let seconds = document.getElementById("seconds");
   let minutes = document.getElementById("minutes");
-  setInterval(function () {
+
+   
     let countHour = parseInt(sessionStorage.getItem("hour"));
     let countMinutes = parseInt(sessionStorage.getItem("minutes"));
     let countSeconds = parseInt(sessionStorage.getItem("seconds"));
@@ -77,11 +80,14 @@ function upTimer() {
     sessionStorage.setItem("hour", countHour);
     sessionStorage.setItem("minutes", countMinutes);
     sessionStorage.setItem("seconds", countSeconds);
-  }, 1000);
+  
 }
 
+
 window.addEventListener("load", function () {
-  if (sessionStorage.getItem("IsSetTimer")) {
-    upTimer();
-  }
+  setInterval(function(){
+    if (sessionStorage.getItem("IsSetTimer")) {
+      upTimer();
+    }
+  },1000)
 });
