@@ -34,12 +34,12 @@ function loadCode(htmlName){
             <!-- первый блок -->
             <div class="row content-block-style content-left-block-sectoring">
               <div>
-                <img class="img-fluid" src="../images/poster.jpg" alt="" />
+                <img class="img-fluid" src="images/poster.jpg" alt="" />
               </div>
               <div class="comment">
                 <div class="d-flex comment-header">
                   <div>
-                    <img src="../images/comments.png" alt="" />
+                    <img src="images/comments.png" alt="" />
                   </div>
                   <div class="d-flex-inline">
                     <a href="">Jason Anderson</a>
@@ -58,11 +58,11 @@ function loadCode(htmlName){
                 </div>
                 <div class="d-flex comment-footer">
                   <div>
-                    <img src="../images/eye.png" alt="" />
+                    <img src="images/eye.png" alt="" />
                     <span>432</span>
                   </div>
                   <div>
-                    <img src="../images/comments.png" alt="" />
+                    <img src="images/comments.png" alt="" />
                     <span>47</span>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ function loadCode(htmlName){
                 <div class="col-lg-4 col-md-9 col-sm-8 col-8 ">
                   <div class="row justify-content-end">
                     <div class="col-lg-1 col-md-1  col-sm-1 col-2">
-                      <img src="../images/time.png" alt="" />
+                      <img src="images/time.png" alt="" />
                     </div>
                     <div class="col-lg-6 col-md-3 col-sm-4 col-7">53 minutes ago</div>
                     <div class="col-lg-1 col-md-1 col-sm-1 col-1">
@@ -84,7 +84,7 @@ function loadCode(htmlName){
                         data-bs-toggle="collapse"
                         onclick="dropIndexNavigationClick(this)"
                       >
-                        <img src="../images/arrowDown.png" alt="" />
+                        <img src="images/arrowDown.png" alt="" />
                       </a>
                     </div>
                   </div>
@@ -116,16 +116,16 @@ function loadCode(htmlName){
               id="avatar"
             >
               <div>
-                <img class="img-fluid" src="../images/avatar.jpg" alt="" />
+                <img class="img-fluid" src="images/avatar.jpg" alt="" />
               </div>
               <div>
                 <p>Hanna Dorman</p>
                 <p class="text-secondary"><small>UX/UI designer</small></p>
               </div>
               <div>
-                <img src="../images/telegram.png" alt="" />
-                <img src="../images/hh.png" alt="" />
-                <img src="../images/twitter.png" alt="" />
+                <img src="images/telegram.png" alt="" />
+                <img src="images/hh.png" alt="" />
+                <img src="images/twitter.png" alt="" />
               </div>
             </div>
             <div class="row content-block-style content-right-block-sectoring">
@@ -138,13 +138,13 @@ function loadCode(htmlName){
               >
                 <span>Navigation</span>
                 <div>
-                  <img src="../images/arrowDown.png" alt="" />
+                  <img src="images/arrowDown.png" alt="" />
                 </div>
               </button>
               <ul class="navbar-collapse collapse dropNavigation">
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <img src="../images/myProfile.png" alt="" />
+                    <img src="images/myProfile.png" alt="" />
                     <span>My Profile</span>
                   </a>
                 </li>
@@ -152,7 +152,7 @@ function loadCode(htmlName){
                   <a class="nav-link" href="#">
                     <div class="justify-content-between align-items-start d-flex">
                       <div class="d-flex">
-                        <img src="../images/balance.png" alt="" />
+                        <img src="images/balance.png" alt="" />
                         <span>Balance</span>
                       </div>
                       <span class="fw-lighter">$ 1,430</span>
@@ -164,7 +164,7 @@ function loadCode(htmlName){
                     <div class="d-flex justify-content-between align-items-start">
                       <div class="d-flex">
                         <div class="d-flex">
-                          <img src="../images/connections.png" alt="" />
+                          <img src="images/connections.png" alt="" />
                         </div>
                         <span>Connections</span>
                       </div>
@@ -176,7 +176,7 @@ function loadCode(htmlName){
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <img src="../images/friends.png" alt="" />
+                    <img src="images/friends.png" alt="" />
                     <span>Friends</span>
                   </a>
                 </li>
@@ -185,7 +185,7 @@ function loadCode(htmlName){
                   <a class="nav-link" href="#">
                     <div class="d-flex justify-content-between align-items-start">
                       <div class="d-flex">
-                        <img src="../images/events.png" alt="" />
+                        <img src="images/events.png" alt="" />
                         <span>Events</span>
                       </div>
                       <span class="badge bg-success rounded-pill fw-lighter"
@@ -196,7 +196,7 @@ function loadCode(htmlName){
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <img src="../images/settings.png" alt="" />
+                    <img src="images/settings.png" alt="" />
                     <span>Account settings</span>
                   </a>
                 </li>
@@ -213,7 +213,7 @@ function loadCode(htmlName){
                 <span class="">Share your thoughts</span>
     
                 <div>
-                  <img src="../images/arrowDown.png" alt="" />
+                  <img src="images/arrowDown.png" alt="" />
                 </div>
               </button>
               <div class="dropForm collapse">
@@ -269,7 +269,7 @@ function loadCode(htmlName){
         </div>
       </div>`
     }   else if(htmlName=='map.html'){
-        app.innerHTML=` <div class="content-sectoring">
+        app.innerHTML=`     <div class="content-sectoring">
         <div class="row content-block-style content-block-sectoring">
           <div class="row justify-content-between">
             <div class="col-lg-1 col-md-2 col-sm-2 col-5">
@@ -281,13 +281,13 @@ function loadCode(htmlName){
                 data-bs-toggle="collapse"
                 onclick="dropNavigationClick(this)"
               >
-                <img src="../images/arrowUp.png" alt="" />
+                <img src="images/arrowUp.png" alt="" />
               </a>
               <a href="" onclick="mapLoad()">
-                <img src="../images/refresh.png" alt="" />
+                <img src="images/refresh.png" alt="" />
               </a>
   
-              <img src="../images/close.png" alt="" />
+              <img src="images/close.png" alt="" />
             </div>
           </div>
           <div class="map-collapse collapse show">
@@ -296,7 +296,7 @@ function loadCode(htmlName){
               style="z-index: 2"
             >
               <div class="col-lg-1 col-md-1 col-sm-1 col-1">
-                <img src="../images/preloader.gif" alt="" />
+                <img src="images/preloader.gif" alt="" />
               </div>
             </div>
             <div
@@ -318,7 +318,7 @@ function loadCode(htmlName){
         </div>
       </div>`
     } else if(htmlName=='resume.html'){
-        app.innerHTML=` <div class=" content-sectoring">
+        app.innerHTML=`    <div class=" content-sectoring">
         <div class="row justify-content-between">
           <!-- левая часть -->
           <div class="col-lg-9">
@@ -334,7 +334,7 @@ function loadCode(htmlName){
                       data-bs-toggle="collapse"
                       onclick="dropNavigationClick(this)"
                     >
-                      <img src="../images/arrowUp.png" alt="" />
+                      <img src="images/arrowUp.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -371,7 +371,7 @@ function loadCode(htmlName){
                       data-bs-toggle="collapse"
                       onclick="dropNavigationClick(this)"
                     >
-                      <img src="../images/arrowDown.png" alt="" />
+                      <img src="images/arrowDown.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -381,7 +381,7 @@ function loadCode(htmlName){
                 id="collapse-post-content1"
               >
                 <div class="col-lg-4 card bg-dark" style="width: 18rem">
-                  <img src="../images/Wireframe.jpg" alt="" />
+                  <img src="images/Wireframe.jpg" alt="" />
                   <div class="card-body bg-white">
                     <h5>Wireframe</h5>
                     <p>
@@ -391,7 +391,7 @@ function loadCode(htmlName){
                   </div>
                 </div>
                 <div class="col-lg-4 card bg-dark" style="width: 18rem">
-                  <img src="../images/Protorype.jpg" alt="" />
+                  <img src="images/Protorype.jpg" alt="" />
                   <div class="card-body bg-white">
                     <h5>Prototype</h5>
                     <p>
@@ -404,7 +404,7 @@ function loadCode(htmlName){
                   </div>
                 </div>
                 <div class="col-lg-4 card bg-dark" style="width: 18rem">
-                  <img src="../images/Mockup.jpg" alt="" />
+                  <img src="images/Mockup.jpg" alt="" />
                   <div class="card-body bg-white">
                     <h5>Mockup</h5>
                     <p>
@@ -428,7 +428,7 @@ function loadCode(htmlName){
                       data-bs-toggle="collapse"
                       onclick="dropNavigationClick(this)"
                     >
-                      <img src="../images/arrowDown.png" alt="" />
+                      <img src="images/arrowDown.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -460,7 +460,7 @@ function loadCode(htmlName){
                       data-bs-toggle="collapse"
                       onclick="dropNavigationClick(this)"
                     >
-                      <img src="../images/arrowDown.png" alt="" />
+                      <img src="images/arrowDown.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -494,7 +494,7 @@ function loadCode(htmlName){
                       data-bs-toggle="collapse"
                       onclick="dropNavigationClick(this)"
                     >
-                      <img src="../images/arrowDown.png" alt="" />
+                      <img src="images/arrowDown.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -530,7 +530,7 @@ function loadCode(htmlName){
                       data-bs-toggle="collapse"
                       onclick="dropNavigationClick(this)"
                     >
-                      <img src="../images/arrowDown.png" alt="" />
+                      <img src="images/arrowDown.png" alt="" />
                     </a>
                   </div>
                 </div>
@@ -562,16 +562,16 @@ function loadCode(htmlName){
               id="avatar"
             >
               <div>
-                <img class="img-fluid" src="../images/avatar.jpg" alt="" />
+                <img class="img-fluid" src="images/avatar.jpg" alt="" />
               </div>
               <div>
                 <p>Hanna Dorman</p>
                 <p class="text-secondary"><small>UX/UI designer</small></p>
               </div>
               <div>
-                <img src="../images/telegram.png" alt="" />
-                <img src="../images/hh.png" alt="" />
-                <img src="../images/twitter.png" alt="" />
+                <img src="images/telegram.png" alt="" />
+                <img src="images/hh.png" alt="" />
+                <img src="images/twitter.png" alt="" />
               </div>
             </div>
             <div class="row content-block-style content-right-block-sectoring">
@@ -584,13 +584,13 @@ function loadCode(htmlName){
               >
                 <span>Navigation</span>
                 <div>
-                  <img src="../images/arrowDown.png" alt="" />
+                  <img src="images/arrowDown.png" alt="" />
                 </div>
               </button>
               <ul class="navbar-collapse collapse dropNavigation">
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <img src="../images/myProfile.png" alt="" />
+                    <img src="images/myProfile.png" alt="" />
                     <span>My Profile</span>
                   </a>
                 </li>
@@ -598,7 +598,7 @@ function loadCode(htmlName){
                   <a class="nav-link" href="#">
                     <div class="justify-content-between align-items-start d-flex">
                       <div class="d-flex">
-                        <img src="../images/balance.png" alt="" />
+                        <img src="images/balance.png" alt="" />
                         <span>Balance</span>
                       </div>
                       <span class="fw-lighter">$ 1,430</span>
@@ -610,7 +610,7 @@ function loadCode(htmlName){
                     <div class="d-flex justify-content-between align-items-start">
                       <div class="d-flex">
                         <div class="d-flex">
-                          <img src="../images/connections.png" alt="" />
+                          <img src="images/connections.png" alt="" />
                         </div>
                         <span>Connections</span>
                       </div>
@@ -622,7 +622,7 @@ function loadCode(htmlName){
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <img src="../images/friends.png" alt="" />
+                    <img src="images/friends.png" alt="" />
                     <span>Friends</span>
                   </a>
                 </li>
@@ -631,7 +631,7 @@ function loadCode(htmlName){
                   <a class="nav-link" href="#">
                     <div class="d-flex justify-content-between align-items-start">
                       <div class="d-flex">
-                        <img src="../images/events.png" alt="" />
+                        <img src="images/events.png" alt="" />
                         <span>Events</span>
                       </div>
                       <span class="badge bg-success rounded-pill fw-lighter"
@@ -642,7 +642,7 @@ function loadCode(htmlName){
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <img src="../images/settings.png" alt="" />
+                    <img src="images/settings.png" alt="" />
                     <span>Account settings</span>
                   </a>
                 </li>
@@ -659,20 +659,20 @@ function loadCode(htmlName){
                 <span class="">Contacts</span>
   
                 <div>
-                  <img src="../images/arrowDown.png" alt="" />
+                  <img src="images/arrowDown.png" alt="" />
                 </div>
               </button>
               <div class="dropForm collapse">
                   <div>
-                      <img src="../images/phone.png" alt="">
+                      <img src="images/phone.png" alt="">
                       <span>+7 977 588 18 24</span>
                     </div>
                 <div>
-                  <img src="../images/email.svg" alt="  ">
+                  <img src="images/email.svg" alt="  ">
                   <span>hanna@mail.ru</span>
                 </div>
                 <div>
-                  <img src="../images/vk.svg" alt="  ">
+                  <img src="images/vk.svg" alt="  ">
                   <span>vk.com/hanna_dorman</span>
                 </div>
                 
