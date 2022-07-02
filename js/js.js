@@ -39,8 +39,9 @@ function printTimer(){
   let minutes=document.getElementById('minutes')
   let hour=document.getElementById('hour')
   hour.textContent=Math.floor(countSeconds/3600) //0 
-  minutes.textContent=Math.floor(countSeconds/60) //0
-  seconds.textContent=countSeconds-(hour.textContent*3600+minutes.textContent*60) 
+  minutes.textContent= Math.floor((countSeconds-hour.textContent*3600)/60) //0
+  seconds.textContent=countSeconds-(hour.textContent*3600+minutes.textContent*60)
+
 }
 
 window.addEventListener('hashchange',function(){
@@ -48,3 +49,4 @@ window.addEventListener('hashchange',function(){
   startTimer()
  }
 })
+
