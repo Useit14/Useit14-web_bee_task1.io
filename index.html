@@ -17,7 +17,7 @@
   <body onload="locationChangeByLoad(event)">
     <nav class="navbar navbar-expand-sm menu-sectoring justify-content-between">
       <div>
-        <img src="images/arrowLeft.png" alt="" />
+      <img src="images/arrowLeft.png" alt="" />
       </div>
       <div class="navbar-collapse collapse menu-left-style" id="collapseMenu">
         <ul class="nav col-lg-6 col-md-7 col-sm-auto col-xs-6">
@@ -94,15 +94,15 @@
         class="collapse navbar-collapse justify-content-between "
         id="collapseSubmenu"
       >
-        <ul class="nav col-lg-4">
-          <li class="nav-item bg-secondary" style="--bs-bg-opacity: 0.1">
+        <ul class="nav col-lg-4 submenu" >
+          <li class="nav-item bg-secondary" >
             <div>
               <img
                 src="images/acivity.png"
                 alt=""
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="pages/index.html"  onclick="locationChangeByLink(event,this.href)">Activity</a>
+              <a class="" href="index.html"   onclick="locationChangeByLink(event,'index.html')">Activity</a>
             </div>
           </li>
           <li class="nav-item">
@@ -112,7 +112,7 @@
                 alt=""
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="pages/map.html" onclick="locationChangeByLink(event,this.href)">Map</a>
+              <a class="" href="map.html"  onclick="locationChangeByLink(event,'map.html')">Map</a>
             </div>
           </li>
           <li class="nav-item">
@@ -122,11 +122,11 @@
                 alt=""
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="pages/timer.html" onclick="locationChangeByLink(event,this.href)">Time</a>
+              <a class="" href="timer.html" onclick="locationChangeByLink(event,'timer.html')">Time</a>
             </div>
           </li>
         </ul>
-        <ul class="navbar-nav col-xl-6 col-lg-7   justify-content-end">
+        <ul class="navbar-nav col-xl-6 col-lg-7 submenu  justify-content-end">
           <li class="nav-item">
             <div>
               <img
@@ -150,7 +150,7 @@
           <li class="nav-item">
             <div>
                <img src="images/tasklist.svg" alt="">
-              <a class="" href="pages/resume.html" onclick="locationChangeByLink(event,this.href)">Resume</a>
+              <a class="" href="pages/resume.html" onclick="locationChangeByLink(event,'resume.html')">Resume</a>
             </div>
           </li>
           <li class="nav-item">

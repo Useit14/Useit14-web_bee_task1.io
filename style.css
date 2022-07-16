@@ -28,6 +28,10 @@ body{
     color: #505050;
 }
 
+.submenu .nav-item{
+    --bs-bg-opacity: 0.1
+}
+
 .menu-left-style {
     font-family: 'Roboto';
     font-style: normal;
