@@ -17,7 +17,9 @@
   <body onload="locationChangeByLoad(event)">
     <nav class="navbar navbar-expand-sm menu-sectoring justify-content-between">
       <div>
-      <img src="images/arrowLeft.png" alt="" />
+        <a href="#" onclick="back()">
+          <img src="../images/arrowLeft.png"  />
+        </a>
       </div>
       <div class="navbar-collapse collapse menu-left-style" id="collapseMenu">
         <ul class="nav col-lg-6 col-md-7 col-sm-auto col-xs-6">
@@ -35,32 +37,32 @@
       <ul class="nav col-lg-4 justify-content-end menu-right-style">
         <li class="nav-item">
           <div>
-            <a href="">
-              <img src="images/Union1.png" alt="" />
+            <a href="#">
+              <img src="images/Union1.png"  />
             </a>
           </div>
           <div>
-            <a class="nav-link" href="">Statistics</a>
+            <a class="nav-link" href="#">Statistics</a>
           </div>
         </li>
         <li class="nav-item">
           <div>
-            <a href="">
-              <img src="images/Union2.png" alt="" />
+            <a href="#">
+              <img src="images/Union2.png"  />
             </a>
           </div>
           <div>
-            <a class="nav-link" href="">Invoices</a>
+            <a class="nav-link" href="#">Invoices</a>
           </div>
         </li>
         <li class="nav-item">
           <div>
-            <a href="">
-              <img src="images/Union3.png" alt="" />
+            <a href="#">
+              <img src="images/Union3.png"  />
             </a>
           </div>
           <div>
-            <a class="nav-link" href="">Shedule</a>
+            <a class="nav-link" href="#">Shedule</a>
           </div>
         </li>
       </ul>
@@ -91,90 +93,112 @@
         </svg>
       </button>
       <div
-        class="collapse navbar-collapse justify-content-between "
+        class="collapse navbar-collapse justify-content-between"
         id="collapseSubmenu"
       >
-        <ul class="nav col-lg-4 submenu" >
-          <li class="nav-item bg-secondary" >
+        <ul class="nav col-lg-4 submenu bg-light">
+          <li class="nav-item">
             <div>
               <img
                 src="images/acivity.png"
-                alt=""
+                
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="index.html"   onclick="locationChangeByLink(event,'index.html')">Activity</a>
+              <a
+                
+                href="index.html"
+                onclick="locationChangeByLink(event,'index.html');changeBgColor(event)"
+                >Activity</a
+              >
             </div>
           </li>
           <li class="nav-item">
             <div>
               <img
                 src="images/map.png"
-                alt=""
+                
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="map.html"  onclick="locationChangeByLink(event,'map.html')">Map</a>
+              <a
+                
+                href="map.html"
+                onclick="locationChangeByLink(event,'map.html');changeBgColor(event)"
+                >Map</a
+              >
             </div>
           </li>
           <li class="nav-item">
             <div>
               <img
                 src="images/time.png"
-                alt=""
+                
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="timer.html" onclick="locationChangeByLink(event,'timer.html')">Time</a>
+              <a
+                
+                href="timer.html"
+                onclick="locationChangeByLink(event,'timer.html');changeBgColor(event)"
+                >Time</a
+              >
             </div>
           </li>
         </ul>
-        <ul class="navbar-nav col-xl-6 col-lg-7 submenu  justify-content-end">
+        <ul
+          class="navbar-nav col-xl-6 col-lg-7 submenu bg-light justify-content-end"
+        >
           <li class="nav-item">
             <div>
               <img
                 src="images/notes.png"
-                alt=""
+                
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="">Notes</a>
+              <a  href="#">Notes</a>
             </div>
           </li>
           <li class="nav-item">
             <div>
               <img
                 src="images/friends.png"
-                alt=""
+                
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="">Friends</a>
+              <a  href="#">Friends</a>
             </div>
           </li>
           <li class="nav-item">
             <div>
-               <img src="images/tasklist.svg" alt="">
-              <a class="" href="pages/resume.html" onclick="locationChangeByLink(event,'resume.html')">Resume</a>
+              <img src="images/tasklist.svg"  />
+              <a
+                
+                href="pages/resume.html"
+                onclick="locationChangeByLink(event,'resume.html');changeBgColor(event)"
+                >Resume</a
+              >
             </div>
           </li>
           <li class="nav-item">
             <div>
               <img
                 src="images/photos.png"
-                alt=""
+                
                 class="d-inline-block align-text-center"
               />
-              <a class="" href="">Photos</a>
+              <a  href="#">Photos</a>
             </div>
           </li>
           <li class="nav-item">
             <div>
-              <img src="images/settings.png" alt="" />
-              <img src="images/arrowDown.png" alt="" />
+              <img src="images/settings.png"  />
+              <img src="images/arrowDown.png"  />
             </div>
           </li>
         </ul>
       </div>
     </nav>
-   <div id="app"></div>
+    <div id="app"></div>
 
-    <script src="js/js.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/router.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

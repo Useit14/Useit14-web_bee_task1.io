@@ -1,45 +1,44 @@
 /* eslint-disable require-jsdoc */
 // eslint-disable-next-line require-jsdoc
-const pageDate = {
-  path: 'pages/index.html',
-  title: 'Index',
-};
-
 function locationChangeByLoad(event) {
   event.preventDefault();
-  getDate();
-  setTitle();
-  history.pushState({ name: pageDate.filename }, '', pageDate.path);
-  sendRequet(pageDate.filename).then((data) => loadCode(data));
+  const pageData = getDate();
+  setTitle(pageData.title);
+  history.pushState({name: pageData.filename}, '', pageData.path);
+  sendRequet(pageData.filename).then((data) => loadCode(data));
 }
 
-function locationChangeByLink(_event, filename) {
-  _event.preventDefault();
-  history.pushState({ name: filename }, '', filename);
-  getDate();
-  setTitle();
+function locationChangeByLink(event, filename) {
+  event.preventDefault();
+  history.pushState({name: filename}, '', filename);
+  setTitle(getTitle(filename));
   sendRequet(filename).then((data) => loadCode(data));
 }
 
 function getDate() {
+  const pageData = {};
   if (history.state) {
-    pageDate.path = history.state['name'];
+    pageData.path = history.state['name'];
+  } else {
+    pageData.path = '/pages/index.html';
   }
-  getFileName();
-  title = pageDate.filename;
-  title = title.split('.');
-  title = title[0].toUpperCase();
-  pageDate.title = title;
+  pageData.filename = getFileName(pageData.path);
+  pageData.title = getTitle(pageData.filename);
+  return pageData;
 }
 
-function getFileName() {
-  let filename = pageDate.path;
-  filename = filename.toString().split('/');
-  pageDate.filename = filename[filename.length - 1];
+function getFileName(path) {
+  const splitPath = path.split('/');
+  return splitPath[splitPath.length - 1];
 }
 
-function setTitle() {
-  document.title = pageDate.title;
+function getTitle(filename) {
+  const splitFileName = filename.split('.');
+  return splitFileName[splitFileName.length - 2].toUpperCase();
+}
+
+function setTitle(title) {
+  document.title = title;
 }
 
 function sendRequet(htmlName) {
@@ -50,5 +49,20 @@ function sendRequet(htmlName) {
 
 function loadCode(response) {
   const app = document.getElementById('app');
-  app.innerHTML = response;
+  if (app) {
+    app.innerHTML = response;
+    getGeneralCode(app);
+  }
+}
+
+function getGeneralCode(app) {
+  const container = document.getElementById('content');
+  app.innerHTML = container.innerHTML;
+}
+
+function back() {
+  history.back();
+  window.addEventListener('popstate', () => {
+    sendRequet(history.state['name']).then((data) => loadCode(data));
+  });
 }
