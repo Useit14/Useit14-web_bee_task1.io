@@ -1,5 +1,7 @@
 /* eslint-disable require-jsdoc */
 // eslint-disable-next-line require-jsdoc
+const basePath = 'useit14.github.io';
+
 function locationChangeByLoad(event) {
   event.preventDefault();
   const pageData = getDate();
@@ -12,7 +14,7 @@ function locationChangeByLink(event, filename) {
   event.preventDefault();
   history.pushState({name: filename}, '', filename);
   setTitle(getTitle(filename));
-  sendRequet(filename).then((data) => loadCode(data));
+  sendRequet(basePath + filename).then((data) => loadCode(data));
 }
 
 function getDate() {
@@ -20,7 +22,7 @@ function getDate() {
   if (history.state) {
     pageData.path = history.state['name'];
   } else {
-    pageData.path = 'useit14.github.io/pages/index.html';
+    pageData.path = 'pages/index.html';
   }
   pageData.filename = getFileName(pageData.path);
   pageData.title = getTitle(pageData.filename);
