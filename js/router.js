@@ -20,7 +20,7 @@ function getDate() {
   if (history.state) {
     pageData.path = history.state['name'];
   } else {
-    pageData.path = '/pages/index.html';
+    pageData.path = 'useit14.github.io/pages/index.html';
   }
   pageData.filename = getFileName(pageData.path);
   pageData.title = getTitle(pageData.filename);
