@@ -1,6 +1,5 @@
 /* eslint-disable require-jsdoc */
 // eslint-disable-next-line require-jsdoc
-const basePath = 'useit14.github.io';
 
 function locationChangeByLoad(event) {
   event.preventDefault();
@@ -14,7 +13,7 @@ function locationChangeByLink(event, filename) {
   event.preventDefault();
   history.pushState({name: filename}, '', filename);
   setTitle(getTitle(filename));
-  sendRequet(basePath + filename).then((data) => loadCode(data));
+  sendRequet(filename).then((data) => loadCode(data));
 }
 
 function getDate() {
