@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: #F5F5F5 !important;
+}
+
+.menu-sectoring {
+    padding: 11px 31px 8px 37px !important;
+    height: 64px;
+}
+
+#collapseSubmenu,
+.collapseSubmenu {
+    z-index: 2;
+}
+
+.menu-right-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #505050;
+}
+
+.submenu .nav-item {
+    --bs-bg-opacity: 0.1
+}
+
+.menu-left-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* black */
+
+    color: #505050;
+}
+
+.menu-sectoring li {
+    text-align: center;
+
+}
+
+.submenu-style {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    color: #505050;
+
+}
+
+.submenu-sectoring {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    height: 40px;
+}
+
+.submenu-sectoring li {
+    padding: 12.5px 16px 11.96px 19.33px;
+}
+
+.submenu-sectoring li div img {
+    margin-right: 10.79px !important;
+}
+
+
+.content-sectoring {
+    padding: 32px 32px 29px 32px !important;
+}
+
+.content-right-block-sectoring {
+    margin-top: 32px !important;
+}
+
+#avatar {
+    padding: 32px 51px 41.07px 51px;
+}
+
+#avatar img {
+    border-radius: 60px;
+}
+
+.content-block-sectoring {
+    padding: 18px 37.3px 32px 32px;
+
+}
+
+.content-block-style {
+    background-color: white;
+}
+
+.content-left-block-sectoring {
+    padding: 56px 32px 34.5px 32px !important;
+
+}
+
+.collapse-post {
+    margin-top: 32px !important;
+}
+
+.collapse-post-header {
+    padding: 18px 21.91px 18.5px 32px !important;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    border-bottom: 1px solid #D3D8DE;
+
+    /* black */
+
+    color: #505050;
+
+}
+
+.collapse-post-content {
+    padding: 20px 32px 34.5px 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+
+    /* black */
+
+    color: #505050;
+
+}
+
+.collapse-post-content div {
+    border-left: 2px solid #D3D8DE;
+    padding-left: 8px;
+}
+
+.comment {
+    margin-top: 20px;
+}
+
+.comment-content {
+    border-left: 2px solid #D3D8DE;
+    padding-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* black */
+
+    color: #505050;
+}
+
+.author {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* second tx */
+
+    color: #8F8F8F;
+
+
+}
+
+.comment-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 20px;
+    /* blue */
+
+
+
+}
+
+.comment-header div {
+    margin-right: 5px;
+}
+
+.comment-footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    /* black */
+
+    color: #505050;
+
+}
+
+.comment-footer div:first-child {
+    margin-right: 36px;
+}
+
+.dropNavigation-header {
+    padding: 8px 14.59px 15.56px 16px !important;
+    text-align: left;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    background-color: white !important;
+    /* black */
+    color: #505050;
+    border-bottom: 1px solid #D3D8DE;
+
+
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+.dropNavigation-header img {
+    margin-left: 50%;
+}
+
+.dropNavigation {
+    padding: 0px 16px 21px 20.17px !important;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* black */
+
+    color: #505050;
+}
+
+.dropNavigation img {
+    margin-right: 20.17px;
+}
+
+.arrow-down {
+    content: url(images/arrowDown.png);
+}
+
+.setting {
+    gap: 1%;
+}
+
+.arrow-up {
+    content: url(images/arrowUp.png);
+}
+
+.dropNavigation li {
+    margin-top: 22px;
+}
+
+.dropNavigation li:nth-child(5) {
+    border-bottom: 1px solid #D3D8DE;
+}
+
+.dropForm {
+    padding: 0px 16px 16px 16px !important;
+}
+
+.dropForm div {
+    margin-top: 8px;
+}
+
+.btn {
+    font-family: 'Roboto' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    /* identical to box height, or 171% */
+    --bs-btn-font-size: .75rem !important;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    background: #5095EC !important;
+    border-radius: 4px !important;
+
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+#map-preloader {
+    height: 62%;
+    width: 92%;
+    position: absolute !important;
+    top: 28% !important;
+
+
+}
+
+.map-preloader-hidden {
+    display: none !important;
+}
+
+.map {
+    position: relative !important;
+}
+
+.map-hidden {
+    display: hidden !important;
+}
+
+@media(max-width:1496px) {
+
+    .map-preloader {
+        height: 72%;
+        width: 92% !important;
+
+
+
+    }
+}
+
+@media(max-width:1177px) {
+
+    .map-preloader {
+        height: 72% !important;
+        width: 89% !important;
+
+
+
+    }
+}
+
+@media(max-width:992px) {
+
+    .map-preloader {
+        height: 75% !important;
+        width: 89% !important;
+
+
+
+    }
+}
+
+@media(max-width:867px) {
+
+    .map-preloader {
+
+        width: 85% !important;
+
+
+
+    }
+}
+
+@media(max-width:636px) {
+
+    .map-preloader {
+
+        width: 79% !important;
+
+
+
+    }
+}
+
+@media(max-width:458px) {
+
+    .map-preloader {
+
+        width: 71% !important;
+
+
+
+    }
+}
+
+@media(max-width:336px) {
+
+    .map-preloader {
+
+        width: 61% !important;
+
+
+
+    }
+}
+
+@media (max-width:330px) {
+
+    .menu-right-style,
+    .submenu-style {
+        font-size: 11px;
+    }
+
+}

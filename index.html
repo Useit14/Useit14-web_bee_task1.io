@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="locationChangeByLoad(event)">
+    <nav class="navbar navbar-expand-sm menu-sectoring justify-content-between">
+      <div>
+        <a href="#" onclick="back()">
+          <img src="images/arrowLeft.png" />
+        </a>
+      </div>
+      <div class="navbar-collapse collapse menu-left-style" id="collapseMenu">
+        <ul class="nav col-lg-6 col-md-7 col-sm-auto col-xs-6">
+          <li class="nav-item active">
+            <a class="nav-link" > <strong>User Pages</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >-</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >Profile</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="nav col-lg-4 justify-content-end menu-right-style">
+        <li class="nav-item">
+          <div>
+            <a >
+              <img src="images/Union1.png" />
+            </a>
+          </div>
+          <div>
+            <a class="nav-link" >Statistics</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div>
+            <a >
+              <img src="images/Union2.png" />
+            </a>
+          </div>
+          <div>
+            <a class="nav-link" >Invoices</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div>
+            <a >
+              <img src="images/Union3.png" />
+            </a>
+          </div>
+          <div>
+            <a class="nav-link" >Shedule</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <nav
+      class="navbar navbar-expand-lg submenu-style submenu-sectoring bg-light"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseSubmenu"
+        aria-conrols="collapseSubmenu"
+        aria-expanded="false"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-three-dots"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+          />
+        </svg>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="collapseSubmenu"
+      >
+        <ul class="nav col-lg-4 submenu bg-light">
+          <li class="nav-item">
+            <div>
+              <img
+                src="images/acivity.png"
+                class="d-inline-block align-text-center"
+              />
+              <a
+                href="index.html"
+                onclick="locationChangeByLink(event,'index.html');changeBgColor(event)"
+                >Activity</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <img
+                src="images/map.png"
+                class="d-inline-block align-text-center"
+              />
+              <a
+                href="map.html"
+                onclick="locationChangeByLink(event,'map.html');changeBgColor(event)"
+                >Map</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <img
+                src="images/time.png"
+                class="d-inline-block align-text-center"
+              />
+              <a
+                href="timer.html"
+                onclick="locationChangeByLink(event,'timer.html');changeBgColor(event)"
+                >Time</a
+              >
+            </div>
+          </li>
+        </ul>
+        <ul
+          class="navbar-nav col-xl-6 col-lg-7 submenu bg-light justify-content-end"
+        >
+          <li class="nav-item">
+            <div>
+              <img
+                src="images/notes.png"
+                class="d-inline-block align-text-center"
+              />
+              <a >Notes</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <img
+                src="images/friends.png"
+                class="d-inline-block align-text-center"
+              />
+              <a >Friends</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <img src="images/tasklist.svg" />
+              <a
+                href="pages/resume.html"
+                onclick="locationChangeByLink(event,'resume.html');changeBgColor(event)"
+                >Resume</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <img
+                src="images/photos.png"
+                class="d-inline-block align-text-center"
+              />
+              <a >Photos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div>
+              <img src="images/settings.png" />
+              <img src="images/arrowDown.png" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="app"></div>
+    <script src="js/script.js"></script>
+    <script src="js/router.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
