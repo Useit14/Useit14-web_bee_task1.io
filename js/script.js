@@ -64,4 +64,3 @@ function clearBgColor() {
   }
 }
 
-window.addEventListener('hashchange', clearBgColor);

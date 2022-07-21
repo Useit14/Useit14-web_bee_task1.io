@@ -1,22 +1,27 @@
 /* eslint-disable require-jsdoc */
 // eslint-disable-next-line require-jsdoc
 
+window.addEventListener('popstate', () => {
+  sendRequet(history.state['name']).then((data) => loadCode(data));
+});
+
 function locationChangeByLoad(event) {
   event.preventDefault();
-  const pageData = getDate();
+  const pageData = getData();
   setTitle(pageData.title);
-  history.pushState({name: pageData.filename}, '', pageData.path);
+  history.pushState({ name: pageData.filename }, '', pageData.path);
   sendRequet(pageData.filename).then((data) => loadCode(data));
 }
 
 function locationChangeByLink(event, filename) {
   event.preventDefault();
-  history.pushState({name: filename}, '', filename);
+  history.pushState({ name: filename }, '', filename);
   setTitle(getTitle(filename));
   sendRequet(filename).then((data) => loadCode(data));
+  clearBgColor();
 }
 
-function getDate() {
+function getData() {
   const pageData = {};
   if (history.state) {
     pageData.path = history.state['name'];
@@ -63,7 +68,5 @@ function getGeneralCode(app) {
 
 function back() {
   history.back();
-  window.addEventListener('popstate', () => {
-    sendRequet(history.state['name']).then((data) => loadCode(data));
-  });
+  clearBgColor();
 }
